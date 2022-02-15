@@ -28,6 +28,6 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest and run coverage
         run: |
-          coverage run -m pytest http_request.py postnumbers.py postnumbers_test.py
+          coverage run -m pytest src/http_request.py src/postnumbers.py src/postnumbers_test.py
       - name:  Generate coverage report 
         run:  coverage report -m  
